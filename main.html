@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cho 1 mang các số cần tìm min max 
+        // cho for loop qua mãng 
+        // khỏi tạo mix , max 
+        // nếu max < mang[index] => max = mang[index]
+        // nếu max > mang[index] => min = mang[index]
+
+        let name = ['10','50','70','80','40','20'];
+        let max = name[0];
+        let min = name[0];
+         
+        for( let i = 0 ; i < name.length ; i++){
+            if(max < name[i]){
+                max = name[i];
+            }
+            if(min > name[i]){
+                min = name[i];
+            }
+        }
+        console.log(max);
+        console.log(min);
+
+    </script>
+</body>
+</html>
